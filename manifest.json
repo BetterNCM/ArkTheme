@@ -4,7 +4,7 @@
     "slug": "ark-theme",
     "version": "0.2.1",
     "author": "MicroBlock",
-    "description": "一个仿明日方舟 UI 的主题。支持网易云本身白色主题/酷炫黑主题。在 StyleSnippet 内修改多项设置。", 
+    "description": "一个仿明日方舟 UI 的主题。支持网易云本身 白色主题/酷炫黑 主题（亮/暗色）。在 StyleSnippet 内修改多项设置。", 
     "betterncm_version": "^1.0.0",
     "preview": "preview.png", 
     "type":"theme",
