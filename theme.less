@@ -359,8 +359,20 @@
 
     .cdwrap,
     .cdin,
-    .cdimg {
+    .cdimg,
+    img {
+        max-width: 220px;
+        object-fit: cover;
+        left: 50px;
         border-radius: 0 !important;
+        
+        &:not(.cdimg){
+            box-shadow: none !important;
+        }
+    }
+
+    .cdimg {
+        filter: drop-shadow(rgba(0, 0, 0, 0.103) 2px 3px 10px);
     }
 
     .content {
@@ -409,13 +421,27 @@
                 content: "";
             }
         }
+            
+        .alias{
+            font-size: 13px !important;
+            text-overflow: ellipsis;
+            word-break: keep-all !important;
+            white-space: nowrap !important;
+            width: 90%;
+        }
     }
+
+
 
     .f-cb {
         // Comments
         margin: 0;
         right: 0;
         width: calc(100vw - 500px);
+
+        [class^='u-'][class$='-icon']{
+            display: none !important;
+        }
 
         .m-comment {
             width: 100%;
