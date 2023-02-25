@@ -444,7 +444,7 @@ body:not(.s-theme-white){
         filter: drop-shadow(rgba(0, 0, 0, 0.103) 2px 3px 10px);
     }
 
-    .content {
+    body:not(.lyric-only) .content {
         transform: translateY(-15%);
         justify-content: flex-end;
         padding-bottom: 100%;
@@ -544,7 +544,7 @@ body:not(.s-theme-white){
 }
 
 @play-page-playbar-mixin: {
-    #main-player.z-shadow {
+    body:not(.lyric-only) #main-player.z-shadow {
         .prg when (not(@apply-play-page-white-bg)){
             left: 30px;
             right: 30px;
@@ -636,7 +636,7 @@ body:not(.s-theme-white){
         }
     }
 
-    .m-pinfo:not(.z-show) {
+    body:not(.lyric-only) .m-pinfo:not(.z-show) {
         margin: 30px 0 0 30px;
         padding: 0 15px;
         width: 300px;
