@@ -576,9 +576,15 @@ body:not(.s-theme-white){
 
 @play-page-playbar-mixin: {
     body:not(.lyric-only) #main-player.z-shadow {
+        
         .prg when (not(@apply-play-page-white-bg)){
             left: 30px;
             right: 30px;
+        }
+        .prg{
+            &,*{
+                border-radius: 0 !important;
+            }
         }
         @keyframes MPlayerEnterRefAnim{
             0%{
